@@ -1,0 +1,28 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+.container {
+  left: 200px;
+  position: absolute;
+  top: 50px;
+}
+
+.form-actions {
+  background: none;
+}
+
+#errorExplanation {
+  color: red;
+}
+
+#loginbox {
+  width: 700px !important;
+  height: 375px !important;
+  margin-top: 100px !important;
+  text-align: left !important;
+}
+
+#loginbox form {
+  top: 20px !important;
+}

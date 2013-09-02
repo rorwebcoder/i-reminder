@@ -1,0 +1,17 @@
+
+<% content_for :page_title do %>
+		Send SMS
+<% end %>
+
+In this page, we can send test event sms to our mobile number.  <br/>
+Event detail: <br />
+Title: <%= @event.title %> <br />
+Description: <%= @event.description %> <br />
+
+<%= form_tag(send_sms_event_path, method: :post) do %>
+		<%= text_field_tag 'mobile_number', nil, placeholder: 'Enter mobile number' %>
+
+		<div class="form-actions">
+				<%= submit_tag "Send" %>
+		</div>
+<% end %>

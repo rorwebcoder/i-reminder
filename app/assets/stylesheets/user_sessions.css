@@ -1,0 +1,12 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+#loginbox {
+  width: 500px !important;
+  margin-top: 150px !important;
+}
+
+#loginbox form {
+  top: 20px !important;
+}

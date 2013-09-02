@@ -1,4 +1,4 @@
-i-reminder
+login_demo
 ==========
 
-smart reminder system
+Signup/Login demo application

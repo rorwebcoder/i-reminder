@@ -1,0 +1,38 @@
+
+
+<% content_for :page_title do %>
+		Event List
+<% end %>
+
+<div class="widget-box">
+		<div class="widget-title">
+				<span class="icon">
+						<i class="icon-th"></i>
+				</span>
+				<span style="float:right;">
+						<%= link_to "Add Event", new_event_path, :style => "color: #333333;" %>
+				</span>
+		</div>
+		<div class="widget-content nopadding">
+				<table class="table table-bordered table-striped">
+						<thead>
+								<tr>
+										<th>Title</th>
+										<th>Start Date</th>
+										<th>End Date</th>
+										<th>Actions</th>
+								</tr>
+						</thead>
+						<tbody>
+								<% @events.each do |e| %>
+										<tr>
+												<td><%= e.title %></td>
+												<td><%= e.start_date %></td>
+												<td><%= e.end_date %></td>
+												<td><%= link_to "Send SMS", send_sms_event_path(e) %></td>
+										</tr>
+								<% end %>
+						</tbody>
+				</table>							
+		</div>
+</div>
